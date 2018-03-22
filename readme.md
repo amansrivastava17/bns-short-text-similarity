@@ -17,17 +17,25 @@ Also as *idf* have a general value for term across categories,  *bns* assign dif
 
 ### Formula to calculate BNS:
 
-*pos* = number of positive training cases, typically minority,
-*neg* = number of negative training cases,
-*tp* = number of positive training cases containing word,
-*fp* = number of negative training cases containing word,
-*fn* = *pos* - *tp*,
-*tn* = *neg* - *fp*,
-*tpr* (true positive rate) = P(word | positive class) = *tp*/*pos*
-*fpr* (false positive rate)  = P(word | negative class) = *fp*/*neg*,
-*bns* (Bi-Normal Separation) =  F^(-1)(tpr)  –  F^(-1)(fpr)
+- *pos* = number of positive training cases, typically minority,
 
-*F^(-1) is  the  inverse  Normal  cumulative  distribution  function*
+- *neg* = number of negative training cases,
+
+- *tp* = number of positive training cases containing word,
+
+- *fp* = number of negative training cases containing word,
+
+- *fn* = *pos* - *tp*,
+
+- *tn* = *neg* - *fp*,
+
+- *tpr* (true positive rate) = P(word | positive class) = *tp*/*pos**
+
+- *fpr* (false positive rate)  = P(word | negative class) = *fp*/*neg*,
+
+- *bns* (Bi-Normal Separation) =  F^(-1)(tpr)  –  F^(-1)(fpr)
+
+  *F^(-1) is  the  inverse  Normal  cumulative  distribution  function*
 
 ### Usage:
 
@@ -68,7 +76,7 @@ for each in results:
 
 Above similarity method might not produce good results as there are no preprocessing involved, here you can refer to my previous repository to perform various text preprocessing involved before sending documents for bns vectorizer creation.
 
-Link for text preprocessing => [text preprocessing python ](https://github.com/amansrivastava17/text-preprocess-python)
+**link** : [text preprocessing python ](https://github.com/amansrivastava17/text-preprocess-python)
 
 *There are still lots of improvement needed to compute similarity for shorter sentences, you must try the above methods and let me know if you have any improvements and suggestions*
 
