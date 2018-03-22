@@ -39,6 +39,8 @@ Also as *idf* have a general value for term across categories,  *bns* assign dif
 
 ### Usage:
 
+##### Create BNS Vectorizer
+
 ```python
 from bns import BNS
 documents = ['please book flights to mumbai', 'need a flight to goa', 'airline price for 			   2 adult', 'plan a trip to goa', 'book a taxi for me', 'book ola for home',              'show uber around me', 'nearby gym around me', 'nearby by temple',
